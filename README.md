@@ -1,5 +1,7 @@
 # 数据挖掘算法
 
+##### 参考于:https://github.com/linyiqun/DataMiningAlgorithm,谢谢！
+
 ## 算法目录
 #### 18大DM算法
 包名 | 目录名 | 算法名 |
