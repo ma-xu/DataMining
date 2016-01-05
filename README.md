@@ -1,5 +1,7 @@
 # 数据挖掘算法
 
+### 研究生学习阶段将会不定期的长期更新。
+
 ##### 参考于:https://github.com/linyiqun/DataMiningAlgorithm    ,谢谢！
 
 ## 算法目录
