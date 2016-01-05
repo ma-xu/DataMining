@@ -2,7 +2,7 @@ package Others.DataMining_KDTree;
 
 /**
  * KD���ڵ�
- * @author lyq
+ * @author maxu
  *
  */
 public class TreeNode {

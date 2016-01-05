@@ -3,7 +3,7 @@ package Others.DataMining_TAN;
 /**
  * TAN�������ر�Ҷ˹�㷨
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Client {

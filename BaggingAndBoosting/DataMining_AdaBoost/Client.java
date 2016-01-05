@@ -2,7 +2,7 @@ package BaggingAndBoosting.DataMining_AdaBoost;
 
 /**
  * AdaBoost�����㷨������
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

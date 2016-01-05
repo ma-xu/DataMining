@@ -3,7 +3,7 @@ package AssociationAnalysis.DataMining_Apriori;
 /**
  * Ƶ���
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class FrequentItem implements Comparable<FrequentItem>{

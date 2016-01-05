@@ -3,7 +3,7 @@ package Clustering.DataMining_KMeans;
 /**
  * ������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Point implements Comparable<Point>{

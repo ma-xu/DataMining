@@ -6,7 +6,7 @@ import java.util.HashMap;
 /**
  * ����ͼ��Ѱ�࣬�ڵ�ǰ�ߵĻ���Ѱ�ҿ��ܵĺ��ӱ�
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class SubChildTraveler {

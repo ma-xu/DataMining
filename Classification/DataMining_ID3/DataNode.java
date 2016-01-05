@@ -2,7 +2,7 @@ package Classification.DataMining_ID3;
 
 /**
  * �����ݵ�Ҷ�ӽڵ�
- * @author lyq
+ * @author maxu
  *
  */
 public class DataNode {

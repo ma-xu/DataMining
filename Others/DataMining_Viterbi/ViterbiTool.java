@@ -10,7 +10,7 @@ import java.util.HashMap;
 /**
  * ά�ر��㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class ViterbiTool {

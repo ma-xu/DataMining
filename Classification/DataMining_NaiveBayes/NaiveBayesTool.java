@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * ���ر�Ҷ˹�㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class NaiveBayesTool {

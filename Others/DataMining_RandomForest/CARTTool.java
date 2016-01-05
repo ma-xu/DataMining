@@ -8,7 +8,7 @@ import java.util.Queue;
 /**
  * CART����ع����㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class CARTTool {

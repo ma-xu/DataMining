@@ -11,7 +11,7 @@ import java.util.LinkedList;
 /**
  * BIRCH�����㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class BIRCHTool {

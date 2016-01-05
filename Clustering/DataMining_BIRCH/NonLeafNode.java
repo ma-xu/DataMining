@@ -6,7 +6,7 @@ import java.util.LinkedList;
 /**
  * ��Ҷ�ӽڵ�
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class NonLeafNode extends ClusteringFeature {

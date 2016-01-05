@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * PrefixSpanTool����ģʽ�����㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class PrefixSpanTool {

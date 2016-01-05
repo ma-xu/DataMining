@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /**
  * Chameleon ���׶ξ����㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class ChameleonTool {

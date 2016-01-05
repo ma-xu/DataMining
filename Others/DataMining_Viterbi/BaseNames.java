@@ -2,7 +2,7 @@ package Others.DataMining_Viterbi;
 
 /**
  * �����������
- * @author lyq
+ * @author maxu
  *
  */
 public class BaseNames {

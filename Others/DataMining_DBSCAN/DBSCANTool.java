@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /**
  * DBSCAN�����ܶȾ����㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class DBSCANTool {

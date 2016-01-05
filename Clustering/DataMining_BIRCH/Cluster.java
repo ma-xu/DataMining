@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Ҷ�ӽڵ��е�С��Ⱥ
- * @author lyq
+ * @author maxu
  *
  */
 public class Cluster extends ClusteringFeature{

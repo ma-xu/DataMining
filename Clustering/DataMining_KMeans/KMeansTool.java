@@ -11,7 +11,7 @@ import java.util.Collections;
 /**
  * k��ֵ�㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class KMeansTool {

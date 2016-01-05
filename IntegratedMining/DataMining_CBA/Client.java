@@ -4,7 +4,7 @@ import java.text.MessageFormat;
 
 /**
  * CBA�㷨--���ڹ�������ķ����㷨
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

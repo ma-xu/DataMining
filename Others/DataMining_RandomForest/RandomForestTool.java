@@ -12,7 +12,7 @@ import java.util.Random;
 /**
  * ���ɭ���㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class RandomForestTool {

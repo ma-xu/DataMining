@@ -2,7 +2,7 @@ package Others.DataMining_DBSCAN;
 
 /**
  * Dbscan�����ܶȵľ����㷨������
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

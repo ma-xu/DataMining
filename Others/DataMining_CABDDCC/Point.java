@@ -4,7 +4,7 @@ package Others.DataMining_CABDDCC;
 
 /**
  * ������
- * @author lyq
+ * @author maxu
  *
  */
 public class Point implements Comparable<Point>{

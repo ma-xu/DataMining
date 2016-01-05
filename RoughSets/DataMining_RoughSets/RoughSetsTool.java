@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * �ֲڼ�����Լ���㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class RoughSetsTool {

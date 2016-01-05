@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * gSpanƵ����ͼ�ھ��㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class GSpanTool {

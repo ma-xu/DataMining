@@ -2,7 +2,7 @@ package Clustering.DataMining_KMeans;
 
 /**
  * K-means��K��ֵ���㷨������
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

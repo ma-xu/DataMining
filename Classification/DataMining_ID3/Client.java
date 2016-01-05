@@ -2,7 +2,7 @@ package Classification.DataMining_ID3;
 
 /**
  * ID3�����������㷨���Գ�����
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * FP���ڵ�
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class TreeNode implements Comparable<TreeNode>, Cloneable{

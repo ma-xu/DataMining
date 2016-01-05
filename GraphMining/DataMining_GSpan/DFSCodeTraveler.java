@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
  * ͼ����������������࣬�жϵ�ǰ�����ڸ�ͼ���Ƿ�Ϊ��С����
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class DFSCodeTraveler {

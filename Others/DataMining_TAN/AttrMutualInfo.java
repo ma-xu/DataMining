@@ -2,7 +2,7 @@ package Others.DataMining_TAN;
 
 /**
  * ����֮��Ļ���Ϣֵ����ʾ����֮��Ĺ����Դ�С
- * @author lyq
+ * @author maxu
  *
  */
 public class AttrMutualInfo implements Comparable<AttrMutualInfo>{

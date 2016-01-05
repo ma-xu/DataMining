@@ -2,7 +2,7 @@ package RoughSets.DataMining_RoughSets;
 
 /**
  * �ֲڼ�Լ���㷨
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

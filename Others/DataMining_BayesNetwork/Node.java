@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * ��Ҷ˹����ڵ���
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Node {

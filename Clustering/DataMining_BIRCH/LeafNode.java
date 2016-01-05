@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * CF��Ҷ�ӽڵ�
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class LeafNode extends ClusteringFeature {

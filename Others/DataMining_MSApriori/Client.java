@@ -2,7 +2,7 @@ package Others.DataMining_MSApriori;
 
 /**
  * ���ڶ�֧�ֶȵ�Apriori�㷨������
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

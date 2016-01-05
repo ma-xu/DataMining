@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  * HITS���ӷ����㷨������
- * @author lyq
+ * @author maxu
  *
  */
 public class HITSTool {

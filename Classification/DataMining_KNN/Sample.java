@@ -3,7 +3,7 @@ package Classification.DataMining_KNN;
 /**
  * �������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Sample implements Comparable<Sample>{

@@ -3,7 +3,7 @@ package StatisticalLearning.DataMining_EM;
 /**
  * ������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Point {

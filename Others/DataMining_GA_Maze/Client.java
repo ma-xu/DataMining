@@ -2,7 +2,7 @@ package Others.DataMining_GA_Maze;
 
 /**
  * �Ŵ��㷨�����Թ���Ϸ��Ӧ��
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

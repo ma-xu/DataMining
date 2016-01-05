@@ -2,7 +2,7 @@ package SequentialPatterns.DataMining_PrefixSpan;
 
 /**
  * PrefixSpan����ģʽ�ھ��㷨
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

@@ -3,7 +3,7 @@ package IntegratedMining.DataMining_CBA.AprioriTool;
 /**
  * Ƶ���
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class FrequentItem implements Comparable<FrequentItem>{

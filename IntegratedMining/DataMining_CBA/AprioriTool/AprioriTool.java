@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * apriori�㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class AprioriTool {

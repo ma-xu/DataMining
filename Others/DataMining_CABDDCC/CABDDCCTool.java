@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /**
  * ������ͨͼ�ķ��Ѿ����㷨
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class CABDDCCTool {

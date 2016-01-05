@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * �����࣬����·������������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Ant implements Comparable<Ant> {

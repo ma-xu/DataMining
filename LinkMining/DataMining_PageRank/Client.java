@@ -2,7 +2,7 @@ package LinkMining.DataMining_PageRank;
 
 /**
  * PageRank������ҳ��Ҫ��/�����㷨
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

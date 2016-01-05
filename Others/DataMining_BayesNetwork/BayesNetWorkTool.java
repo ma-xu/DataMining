@@ -10,7 +10,7 @@ import java.util.HashMap;
 /**
  * ��Ҷ˹�����㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class BayesNetWorkTool {

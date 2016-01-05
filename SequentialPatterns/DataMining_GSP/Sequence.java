@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * ���У�ÿ�������ڲ������ItemSet�
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Sequence implements Comparable<Sequence>, Cloneable {

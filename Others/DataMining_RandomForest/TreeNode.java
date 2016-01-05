@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * �ع�������ڵ�
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class TreeNode {

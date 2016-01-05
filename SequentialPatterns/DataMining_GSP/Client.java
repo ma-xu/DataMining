@@ -2,7 +2,7 @@ package SequentialPatterns.DataMining_GSP;
 
 /**
  * GSP����ģʽ�����㷨
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

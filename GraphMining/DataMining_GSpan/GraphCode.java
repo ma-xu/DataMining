@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * ͼ������
- * @author lyq
+ * @author maxu
  *
  */
 public class GraphCode {

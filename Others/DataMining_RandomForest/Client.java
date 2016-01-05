@@ -5,7 +5,7 @@ import java.text.MessageFormat;
 /**
  * ���ɭ���㷨���Գ���
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Client {

@@ -6,7 +6,7 @@ import java.util.HashMap;
 /**
  * ֪ʶϵͳ
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class KnowledgeSystem {

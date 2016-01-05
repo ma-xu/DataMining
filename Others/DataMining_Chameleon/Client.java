@@ -2,7 +2,7 @@ package Others.DataMining_Chameleon;
 
 /**
  * Chameleon(��ɫ��)���׶ξ����㷨
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

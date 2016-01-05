@@ -3,7 +3,7 @@ package Classification.DataMining_NaiveBayes;
 
 /**
  * ���ر�Ҷ˹�㷨����������
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

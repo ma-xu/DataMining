@@ -1,8 +1,8 @@
 package AssociationAnalysis.DataMining_Apriori;
 
 /**
- * apriori���������ھ��㷨������
- * @author lyq
+ * apriori关联规则挖掘算法调用类
+ * @author maxu
  *
  */
 public class Client {

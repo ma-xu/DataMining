@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * ��ݼ�¼���ϣ���һЩ��ͬ������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class RecordCollection {

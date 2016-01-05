@@ -3,7 +3,7 @@ package GraphMining.DataMining_GSpan;
 /**
  * �ߣ�����Ԫ���ʾ
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Edge {

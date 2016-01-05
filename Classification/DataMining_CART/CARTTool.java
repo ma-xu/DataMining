@@ -17,7 +17,7 @@ import javax.swing.text.html.MinimalHTMLWriter;
 /**
  * CART����ع����㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class CARTTool {

@@ -3,7 +3,7 @@ package BaggingAndBoosting.DataMining_AdaBoost;
 /**
  * ������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Point {

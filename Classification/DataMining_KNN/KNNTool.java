@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * k������㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class KNNTool {

@@ -2,7 +2,7 @@ package StatisticalLearning.DataMining_SVM;
 
 /**
  * SVM֧��������������
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

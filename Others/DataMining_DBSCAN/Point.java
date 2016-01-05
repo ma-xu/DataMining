@@ -3,7 +3,7 @@ package Others.DataMining_DBSCAN;
 /**
  * ������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Point {

@@ -2,7 +2,7 @@ package StatisticalLearning.DataMining_EM;
 
 /**
  * EM��������㷨����������
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

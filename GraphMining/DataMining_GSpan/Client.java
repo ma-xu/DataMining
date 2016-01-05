@@ -2,7 +2,7 @@ package GraphMining.DataMining_GSpan;
 
 /**
  * gSpanƵ����ͼ�ھ��㷨
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

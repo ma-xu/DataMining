@@ -2,7 +2,7 @@ package StatisticalLearning.DataMining_SVM.libsvm;
 /**
  * 
  * svm�����ڵ�
- * @author lyq
+ * @author maxu
  *
  */
 public class svm_node implements java.io.Serializable

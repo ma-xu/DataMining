@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * k������㷨��������
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

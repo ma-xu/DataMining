@@ -6,7 +6,7 @@ import java.util.Collections;
 /**
  * ��ͨͼ��
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Graph {

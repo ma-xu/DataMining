@@ -14,7 +14,7 @@ import java.util.Set;
 /**
  * ID3�㷨ʵ����
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class ID3Tool {

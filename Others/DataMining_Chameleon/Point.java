@@ -4,7 +4,7 @@ package Others.DataMining_Chameleon;
 
 /**
  * ������
- * @author lyq
+ * @author maxu
  *
  */
 public class Point{

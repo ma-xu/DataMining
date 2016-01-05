@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * GSP����ģʽ�����㷨
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class GSPTool {

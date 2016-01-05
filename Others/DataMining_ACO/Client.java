@@ -2,7 +2,7 @@ package Others.DataMining_ACO;
 
 /**
  * ��Ⱥ�㷨������
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

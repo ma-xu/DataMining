@@ -15,7 +15,7 @@ import StatisticalLearning.DataMining_SVM.libsvm.svm_problem;
 /**
  * SVM֧�����������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class SVMTool {

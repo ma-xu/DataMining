@@ -12,7 +12,7 @@ import java.util.Stack;
 /**
  * KD��-kά�ռ�ؼ���ݼ����㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class KDTreeTool {

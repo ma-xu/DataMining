@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /**
  * PageRank��ҳ�����㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class PageRankTool {

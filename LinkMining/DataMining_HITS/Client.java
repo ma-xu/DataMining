@@ -2,7 +2,7 @@ package LinkMining.DataMining_HITS;
 
 /**
  * HITS���ӷ����㷨
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

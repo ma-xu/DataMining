@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * �۴���
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Cluster implements Cloneable{

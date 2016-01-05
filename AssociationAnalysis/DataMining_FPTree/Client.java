@@ -2,7 +2,7 @@ package AssociationAnalysis.DataMining_FPTree;
 
 /**
  * FPTreeƵ��ģʽ���㷨
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

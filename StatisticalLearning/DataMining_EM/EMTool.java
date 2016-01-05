@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /**
  * EM��������㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class EMTool {

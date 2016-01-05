@@ -3,7 +3,7 @@ package Others.DataMining_Viterbi;
 /**
  * ά�ر��㷨
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Client {

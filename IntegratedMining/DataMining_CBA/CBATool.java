@@ -13,7 +13,7 @@ import IntegratedMining.DataMining_CBA.AprioriTool.FrequentItem;
 /**
  * CBA�㷨(�����������)������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class CBATool {

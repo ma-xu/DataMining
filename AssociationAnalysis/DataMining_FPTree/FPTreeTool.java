@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * FPTree�㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class FPTreeTool {

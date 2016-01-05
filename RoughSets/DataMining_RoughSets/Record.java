@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * ��ݼ�¼����������¼��������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Record {

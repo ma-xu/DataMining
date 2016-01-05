@@ -14,7 +14,7 @@ import java.util.Random;
 /**
  * ��Ⱥ�㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class ACOTool {

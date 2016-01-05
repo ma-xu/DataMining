@@ -11,7 +11,7 @@ import java.util.Random;
 /**
  * �Ŵ��㷨�����Թ���Ϸ��Ӧ��-�Ŵ��㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class GATool {

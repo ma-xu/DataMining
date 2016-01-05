@@ -3,7 +3,7 @@ package Others.DataMining_MSApriori;
 /**
  * Ƶ���
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class FrequentItem implements Comparable<FrequentItem>{

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * �����е����
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class ItemSet {

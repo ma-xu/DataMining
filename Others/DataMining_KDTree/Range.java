@@ -3,7 +3,7 @@ package Others.DataMining_KDTree;
 /**
  * �ռ�ʸ������ʾ����Ŀռ䷶Χ
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Range {

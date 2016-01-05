@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * ��������������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public abstract class ClusteringFeature {

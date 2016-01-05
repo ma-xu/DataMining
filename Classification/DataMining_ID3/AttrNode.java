@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * ���Խڵ㣬����Ҷ�ӽڵ�
- * @author lyq
+ * @author maxu
  *
  */
 public class AttrNode {

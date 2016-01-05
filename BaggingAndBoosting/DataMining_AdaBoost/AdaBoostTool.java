@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * AdaBoost�����㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class AdaBoostTool {

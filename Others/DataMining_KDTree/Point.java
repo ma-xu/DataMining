@@ -3,7 +3,7 @@ package Others.DataMining_KDTree;
 /**
  * ������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Point{

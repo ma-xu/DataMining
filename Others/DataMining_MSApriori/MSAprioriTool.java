@@ -14,7 +14,7 @@ import AssociationAnalysis.DataMining_Apriori.FrequentItem;
 /**
  * ���ڶ�֧�ֶȵ�Apriori�㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class MSAprioriTool {

@@ -2,7 +2,7 @@ package GraphMining.DataMining_GSpan;
 
 /**
  * �ߵ�Ƶ��ͳ��
- * @author lyq
+ * @author maxu
  *
  */
 public class EdgeFrequency {

@@ -6,7 +6,7 @@ import java.util.Random;
 /**
  * �Ŵ��㷨������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class GATool {

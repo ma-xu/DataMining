@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * ͼ�ṹ��
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class Graph {

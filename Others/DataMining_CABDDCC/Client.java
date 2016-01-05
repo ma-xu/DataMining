@@ -2,7 +2,7 @@ package Others.DataMining_CABDDCC;
 
 /**
  * ������ͨͼ�ķ��Ѿ����㷨
- * @author lyq
+ * @author maxu
  *
  */
 public class Client {

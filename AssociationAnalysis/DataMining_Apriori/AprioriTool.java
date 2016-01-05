@@ -11,21 +11,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * apriori�㷨������
+ * apriori工具类算法
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class AprioriTool {
-	// ��С֧�ֶȼ���
+	// 最小支持度计数
 	private int minSupportCount;
-	// ��������ļ���ַ
+	// 测试数据文件地址
 	private String filePath;
-	// ÿ�������е���ƷID
+	// 每个事务中的商品ID
 	private ArrayList<String[]> totalGoodsIDs;
-	// ����м������������Ƶ����б�
+	// 过程中计算出来的所有频繁集列表
 	private ArrayList<FrequentItem> resultItem;
-	// ����м������Ƶ�����ID����
+	// 过程中计算出来频繁项集的ID集合
 	private ArrayList<String[]> resultItemID;
 
 	public AprioriTool(String filePath, int minSupportCount) {
@@ -35,7 +35,7 @@ public class AprioriTool {
 	}
 
 	/**
-	 * ���ļ��ж�ȡ���
+	 * 从文件中读取数据
 	 */
 	private void readDataFile() {
 		File file = new File(filePath);
@@ -60,13 +60,13 @@ public class AprioriTool {
 			temp = new String[array.length - 1];
 			System.arraycopy(array, 1, temp, 0, array.length - 1);
 
-			// ������ID�����б����
+			// 将事务ID加入列表中
 			totalGoodsIDs.add(temp);
 		}
 	}
 
 	/**
-	 * �ж��ַ�����array2�Ƿ��������array1��
+	 *判断字符数组array2是否包含于数组array1中
 	 * 
 	 * @param array1
 	 * @param array2
@@ -79,9 +79,9 @@ public class AprioriTool {
 
 		boolean iSContain = false;
 		for (String s : array2) {
-			// �µ���ĸ�Ƚ�ʱ�����³�ʼ������
+			// 新的字母比较时，重新初始化变量
 			iSContain = false;
-			// �ж�array2��ÿ���ַ�ֻҪ������array1�� �������
+			// 判断array2中每个字符，只要包括在array1中，就算包含
 			for (String s2 : array1) {
 				if (s.equals(s2)) {
 					iSContain = true;
@@ -89,7 +89,7 @@ public class AprioriTool {
 				}
 			}
 
-			// ����Ѿ��жϳ������ˣ���ֱ���ж�ѭ��
+			// 如果已经判断出不包含了，则直接中断循环
 			if (!iSContain) {
 				break;
 			}
@@ -99,22 +99,22 @@ public class AprioriTool {
 	}
 
 	/**
-	 * �������������
+	 * 项集进行连接运算
 	 */
 	private void computeLink() {
-		// ���Ӽ������ֹ��k������㵽k-1���Ϊֹ
+		// 连接运算的终止数，K项集必须算到k－1子项集为止
 		int endNum = 0;
-		// ��ǰ�Ѿ������������㵽���,��ʼʱ����1�
+		// 当前已经进行连接运算到几项集，开始为1项集
 		int currentNum = 1;
-		// ��Ʒ��1Ƶ���ӳ��ͼ
+		// 商品，1频繁项集映射图
 		HashMap<String, FrequentItem> itemMap = new HashMap<>();
 		FrequentItem tempItem;
-		// ��ʼ�б�
+		// 初始列表
 		ArrayList<FrequentItem> list = new ArrayList<>();
-		// ����������������Ľ���
+		// 经过连接运算后产生的结果项集
 		resultItem = new ArrayList<>();
 		resultItemID = new ArrayList<>();
-		// ��ƷID������
+		// 商品id的种类
 		ArrayList<String> idType = new ArrayList<>();
 		for (String[] a : totalGoodsIDs) {
 			for (String s : a) {
@@ -123,18 +123,18 @@ public class AprioriTool {
 					idType.add(s);
 					resultItemID.add(new String[] { s });
 				} else {
-					// ֧�ֶȼ����1
+					// 支持度计数加1
 					tempItem = itemMap.get(s);
 					tempItem.setCount(tempItem.getCount() + 1);
 				}
 				itemMap.put(s, tempItem);
 			}
 		}
-		// ����ʼƵ���ת�뵽�б��У��Ա��������������
+		// 将初始频繁项集转入到列表中，以便继续做连接运算
 		for (Map.Entry entry : itemMap.entrySet()) {
 			list.add((FrequentItem) entry.getValue());
 		}
-		// ������ƷID�������򣬷������Ӽ�����᲻һ�£��������
+		// 按照商品ID进行排序，，否则连接计算结果必将会不一致，将会减少
 		Collections.sort(list);
 		resultItem.addAll(list);
 
@@ -143,7 +143,7 @@ public class AprioriTool {
 		String[] resultArray;
 		ArrayList<String> tempIds;
 		ArrayList<String[]> resultContainer;
-		// �ܹ�Ҫ�㵽endNum�
+		// 总共要算到endNum项集
 		endNum = list.size() - 1;
 
 		while (currentNum < endNum) {
@@ -155,7 +155,7 @@ public class AprioriTool {
 					tempIds = new ArrayList<>();
 					array2 = list.get(j).getIdArray();
 					for (int k = 0; k < array1.length; k++) {
-						// ����Ӧλ���ϵ�ֵ��ȵ�ʱ��ֻȡ����һ��ֵ������һ������ɾ�����
+						// 如果对应位置上的值相等的时候，只取其中一个值，做了一个链接删除操作
 						if (array1[k].equals(array2[k])) {
 							tempIds.add(array1[k]);
 						} else {
@@ -167,7 +167,7 @@ public class AprioriTool {
 					tempIds.toArray(resultArray);
 
 					boolean isContain = false;
-					// ���˲���������ĵ�ID���飬�����ظ��ĺͳ��Ȳ����Ҫ���
+					// 过滤不符合条件的ID数组，包括重复的和长度不符合要求的
 					if (resultArray.length == (array1.length + 1)) {
 						isContain = isIDArrayContains(resultContainer,
 								resultArray);
@@ -178,14 +178,14 @@ public class AprioriTool {
 				}
 			}
 
-			// ��Ƶ����ļ�֦���?���뱣֤�µ�Ƶ��������Ҳ������Ƶ���
+			// 做频繁项集的剪枝处理，必须保证新的频繁项集的子集也必须是频繁项集
 			list = cutItem(resultContainer);
 			currentNum++;
 		}
 
-		// ���Ƶ���
+		// 输出频繁项集
 		for (int k = 1; k <= currentNum; k++) {
-			System.out.println("Ƶ��" + k + "���");
+			System.out.println("频繁" + k + "项集：");
 			for (FrequentItem i : resultItem) {
 				if (i.getLength() == k) {
 					System.out.print("{");
@@ -200,12 +200,12 @@ public class AprioriTool {
 	}
 
 	/**
-	 * �ж��б������Ƿ��Ѿ��������
+	 * 判断列表结果中是否已经包含此数组
 	 * 
 	 * @param container
-	 *            ID��������
+	 *            ID数组容器
 	 * @param array
-	 *            ��Ƚ�����
+	 *            待比较数组
 	 * @return
 	 */
 	private boolean isIDArrayContains(ArrayList<String[]> container,
@@ -217,21 +217,21 @@ public class AprioriTool {
 		}
 
 		for (String[] s : container) {
-			// �Ƚϵ��Ӻ����뱣֤����һ��
+			// 比较的必须保持长度一样
 			if (s.length != array.length) {
 				continue;
 			}
 
 			isContain = true;
 			for (int i = 0; i < s.length; i++) {
-				// ֻҪ��һ��id���ȣ����㲻���
+				//  只要有一个id不等，就算不相等
 				if (s[i] != array[i]) {
 					isContain = false;
 					break;
 				}
 			}
 
-			// ����Ѿ��ж��ǰ���������ʱ��ֱ���˳�
+			// 如果已经判断是包含在容器中时，直接退出
 			if (isContain) {
 				break;
 			}
@@ -241,22 +241,22 @@ public class AprioriTool {
 	}
 
 	/**
-	 * ��Ƶ�������֦���裬���뱣֤�µ�Ƶ��������Ҳ������Ƶ���
+	 * 对频繁项集做剪枝处理，必须保证新的频繁项集的子集也必须是频繁项集
 	 */
 	private ArrayList<FrequentItem> cutItem(ArrayList<String[]> resultIds) {
 		String[] temp;
-		// ���Ե�����λ�ã��Դ˹����Ӽ�
+		// 忽略引索位置，以此构建子集
 		int igNoreIndex = 0;
 		FrequentItem tempItem;
-		// ��֦����µ�Ƶ���
+		// 剪枝生成新的频繁项集
 		ArrayList<FrequentItem> newItem = new ArrayList<>();
-		// �����Ҫ���id
+		// 不符合要求的id
 		ArrayList<String[]> deleteIdArray = new ArrayList<>();
-		// ����Ƿ�ҲΪƵ�����
+		// 子集是否也为频繁子项集
 		boolean isContain = true;
 
 		for (String[] array : resultIds) {
-			// �оٳ����е�һ������������жϴ�����Ƶ����б���
+			// 列举出其中的一个子项集，判断存在于频繁项集列表中
 			temp = new String[array.length - 1];
 			for (igNoreIndex = 0; igNoreIndex < array.length; igNoreIndex++) {
 				isContain = true;
@@ -278,10 +278,10 @@ public class AprioriTool {
 			}
 		}
 
-		// �Ƴ���������ID���
+		// 移除不符合条件的ID组合
 		resultIds.removeAll(deleteIdArray);
 
-		// �Ƴ�֧�ֶȼ����id����
+		// 移除支持度计数不够的ID集合
 		int tempCount = 0;
 		for (String[] array : resultIds) {
 			tempCount = 0;
@@ -291,7 +291,7 @@ public class AprioriTool {
 				}
 			}
 
-			// ���֧�ֶȼ�����ڵ�����С��С֧�ֶȼ���������µ�Ƶ���������������
+			// 如果支持度计数大于等于最小支持度计数则生成新的频繁项集，并加入结果集中
 			if (tempCount >= minSupportCount) {
 				tempItem = new FrequentItem(array, tempCount);
 				newItem.add(tempItem);
@@ -304,7 +304,7 @@ public class AprioriTool {
 	}
 
 	/**
-	 * ����array2�Ƿ����array1�У�����Ҫ��ȫһ��
+	 * 数组array2是否包含于array1中，不需要完全一样
 	 * 
 	 * @param array1
 	 * @param array2
@@ -315,14 +315,14 @@ public class AprioriTool {
 		for (String s2 : array2) {
 			isContain = false;
 			for (String s1 : array1) {
-				// ֻҪs2�ַ������array1�У�����ַ�������array1��
+				// ֻ只要s2字符存在于array1中，这个字符就算包含在array1中
 				if (s2.equals(s1)) {
 					isContain = true;
 					break;
 				}
 			}
 
-			// һ�����ֲ�����ַ���array2���鲻����array1��
+			// 一旦发现不包含的字符，则array2数组不包含于array1中
 			if (!isContain) {
 				break;
 			}
@@ -332,13 +332,13 @@ public class AprioriTool {
 	}
 
 	/**
-	 * ��ݲ����Ƶ��������������
+	 * 根据产生的频繁项集输出关联规则
 	 * 
 	 * @param minConf
-	 *            ��С���Ŷ���ֵ
+	 *            最小置信度阈值
 	 */
 	public void printAttachRule(double minConf) {
-		// �������Ӻͼ�֦����
+		// 进行连接和剪枝操作
 		computeLink();
 
 		int count1 = 0;
@@ -347,14 +347,14 @@ public class AprioriTool {
 		ArrayList<String> childGroup2;
 		String[] group1;
 		String[] group2;
-		// �����һ��Ƶ�����������������
+		// 以最后一个频繁项集做关联规则的输出
 		String[] array = resultItem.get(resultItem.size() - 1).getIdArray();
-		// �Ӽ���������ʱ���ȥ����Ϳռ�
+		// 子集总数，计算的时候除去自身和空集
 		int totalNum = (int) Math.pow(2, array.length);
 		String[] temp;
-		// ���������飬�����������Ӽ�
+		// 二进制数组，用来代表各自子集
 		int[] binaryArray;
-		// ��ȥͷ��β��
+		// 除去头部和尾部
 		for (int i = 1; i < totalNum - 1; i++) {
 			binaryArray = new int[array.length];
 			numToBinaryArray(binaryArray, i);
@@ -363,7 +363,7 @@ public class AprioriTool {
 			childGroup2 = new ArrayList<>();
 			count1 = 0;
 			count2 = 0;
-			// ���ն�����λ��ϵȡ���Ӽ�
+			// 按照二进制位关系取出子集
 			for (int j = 0; j < binaryArray.length; j++) {
 				if (binaryArray[j] == 1) {
 					childGroup1.add(array[j]);
@@ -382,14 +382,14 @@ public class AprioriTool {
 				if (isStrArrayContain(a, group1)) {
 					count1++;
 
-					// ��group1�������£�ͳ��group2���¼��������
+					// 在group1的条件下，统计group2的事件发生次数
 					if (isStrArrayContain(a, group2)) {
 						count2++;
 					}
 				}
 			}
 
-			// {A}-->{B}����˼Ϊ��A������·���B�ĸ���
+			// {A}-->{B}的意思为在A的情况下发生B的概率
 			System.out.print("{");
 			for (String s : group1) {
 				System.out.print(s + ", ");
@@ -400,25 +400,25 @@ public class AprioriTool {
 				System.out.print(s + ", ");
 			}
 			System.out.print(MessageFormat.format(
-					"},confidence(���Ŷ�)��{0}/{1}={2}", count2, count1, count2
+					"},confidence(置信度)：{0}/{1}={2}", count2, count1, count2
 							* 1.0 / count1));
 			if (count2 * 1.0 / count1 < minConf) {
-				// �����Ҫ�󣬲���ǿ����
-				System.out.println("���ڴ˹������Ŷ�δ�ﵽ��С���Ŷȵ�Ҫ�󣬲���ǿ����");
+				// 不符合要求，不是强规则
+				System.out.println("由于此规则置信度喂达到最小置信度的要求，不是强规则");
 			} else {
-				System.out.println("Ϊǿ����");
+				System.out.println("为强规则");
 			}
 		}
 
 	}
 
 	/**
-	 * ����תΪ��������ʽ
+	 * 数字转为二进制形式
 	 * 
 	 * @param binaryArray
-	 *            ת����Ķ�����������ʽ
+	 *            转化后的二进制数组形式
 	 * @param num
-	 *            ��ת������
+	 *            待转化数字
 	 */
 	private void numToBinaryArray(int[] binaryArray, int num) {
 		int index = 0;

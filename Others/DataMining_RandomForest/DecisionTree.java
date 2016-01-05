@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * ������
  * 
- * @author lyq
+ * @author maxu
  * 
  */
 public class DecisionTree {
